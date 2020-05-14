@@ -23,7 +23,6 @@ function App() {
           </Card.Body>
           <Card.Footer>
             <Card.Text>147 Followers</Card.Text>
-            <Card.Text>33 Repositories</Card.Text>
             <Card.Text>5 Following</Card.Text>
           </Card.Footer>
         </Card>

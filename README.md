@@ -46,6 +46,7 @@ npm run start
 ## Requirements
 
 Python >= 3.6
+Node >= 12.x
 
 ## License
 

@@ -1,10 +1,13 @@
 # Super tiny and basic Python backend
 
 ![](https://github.com/stackbuilders/tiny-python-fullstack/workflows/Flask/badge.svg)
+![](https://github.com/stackbuilders/tiny-python-fullstack/workflows/React/badge.svg)
 
 This application just consumes the [Github Public API](https://developer.github.com/v3/) in order to get a specific user information.
 
 ## Setup
+
+### Back-end
 
 Create and activate the virtual environment
 
@@ -23,6 +26,21 @@ The server will be up on http://localhost:5000. To try this out just make a POST
 
 ```bash
 curl -XPOST 'localhost:5000/info' -d 'user=stackbuilders'
+```
+
+### Front-end
+
+Install dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+Run the application (create-react-app):
+
+```bash
+npm run start
 ```
 
 ## Requirements

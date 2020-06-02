@@ -6,8 +6,14 @@ app = Flask(__name__)
 class FakeConsumer:
     def json(self):
         return {
+            'login': 'stackbuilders',
             'name': 'Stack Builders',
-            'email': 'info@stackbuilders.com'
+            'email': 'info@stackbuilders.com',
+            'location': 'New York',
+            'public_repos': 179,
+            'public_gists': 0,
+            'followers': 0,
+            'following': 0
         }
 
 

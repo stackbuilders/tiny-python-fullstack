@@ -16,6 +16,12 @@ virtualenv venv
 source venv/bin/activate
 ```
 
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
 Run the server
 
 ```bash
@@ -45,8 +51,8 @@ npm run start
 
 ## Requirements
 
-Python >= 3.6
-Node >= 12.x
+- Python >= 3.6
+- Node >= 12.x
 
 ## License
 

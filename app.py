@@ -1,10 +1,16 @@
 from flask import Flask, jsonify, request, Response
+from typing import Dict, Tuple, Union
 
-app = Flask(__name__)
+FlaskResponse = Union[
+    Response,
+    Tuple[str, int]
+]
+
+app: Flask = Flask(__name__)
 
 
 class FakeConsumer:
-    def json(self):
+    def json(self) -> Dict:
         return {
             'login': 'stackbuilders',
             'name': 'Stack Builders',
@@ -18,12 +24,12 @@ class FakeConsumer:
 
 
 @app.route('/')
-def index():
+def index() -> FlaskResponse:
     return Response('{"Hello":"World"}', mimetype='application/json')
 
 
 @app.route('/info', methods=['POST'])
-def user():
+def user() -> FlaskResponse:
     if 'user' in request.form and request.form['user'] != '':
         consumer = FakeConsumer()
         return jsonify(consumer.json())
